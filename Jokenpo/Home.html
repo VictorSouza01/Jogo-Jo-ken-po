@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo Jokenpo</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script
+        language="JAVASCRIPT"
+        type="text/javascript"
+        src="JS/Script.js" 
+        >
+        </script>
+    </head>
+    <body onload="nome()">
+       <div id="geral">
+            <h3 id="titulo_do_jogo">Jogo do Jokenppo</h3><br>
+            
+            <div id="contentPlayerName">
+                <div id="TituloPlayerName"><span  class="NomeDoJogador" id="NomeDoJogadorTituloP">Jogador: </span></div>
+                
+                <div id="largPlayerName"><span id="NomeDoJogadorTitulo" title="Mudar o nome" onclick="MudarNick()"> </span></div>
+            </div>
+
+            <div id="opcoes">
+                <input type="radio" name="opcoesEscolha" onclick="Seleciona()" class="radio_opcoes" id="Papel">  <span class="radios_opcoes">Papel</span>
+                <input type="radio" name="opcoesEscolha" onclick="Seleciona()" class="radio_opcoes" id="Pedra">  <span class="radios_opcoes">Pedra</span>
+                <input type="radio" name="opcoesEscolha" onclick="Seleciona()" class="radio_opcoes"  id="Tesoura" >    <span class="radios_opcoes">Tesoura</span>
+
+                <input type="button" name="Play" id="btn_jogar" class="btn_opcoes" value="Jogar" onclick="Jogar()">
+                <input type="button" name="Play" id="btn_resetar" class="btn_opcoes" value="Resetar" onclick="resetar()">
+            </div>
+            <div id="Pontuação">
+                <span id="TituloPlacar" > Placar </span>
+                <span id="PlacarNumPC" onchange="Vencedor()">  </span>
+                <span id="VS"> VS </span>
+                <span id="PlacarNumPLAYER" onchange="Vencedor()">  </span>
+            </div>
+            <div id="Computador">
+                <span> Computador </span>
+                <img src="IMGS/pc.png" id="imagemcomputador">
+
+            </div>
+            <div id="PlayerStatus">
+                <span id="NomeDoJogadorFoto"> </span>
+                <img src="IMGS/pc.png" id="imagemplayer">
+            </div>
+       </div>
+    </body>
+</html>

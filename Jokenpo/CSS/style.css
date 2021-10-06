@@ -1,0 +1,225 @@
+body{
+    background-color: rgb(65, 56, 56);
+}
+#geral{
+    height: 90vh;
+    position: relative;
+ 
+}
+#titulo_do_jogo{
+    position: relative;
+    height: 25px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    text-shadow:#000 1px -1px, #000 -1px 1px, #000 2px 2px, #000 -1px -1px
+}
+#opcoes{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -125px;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+
+
+}
+#btn_jogar{
+    position: absolute;
+    height: 23px;
+    width: 65px;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    margin-top: -10px;
+
+}
+#btn_resetar{
+    position: absolute;
+    height: 23px;
+    width: 65px;
+    left: 50%;
+    top: 50%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.btn_opcoes{
+    background-color: rgba(255, 255, 255, 0.267);
+    color: black;
+    border: 2px solid rgb(197, 158, 158);
+    border-radius: 7px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn_opcoes:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+.radios_opcoes{
+    font-size:medium;
+    font-weight: bolder;
+    color: white;
+}
+.radio_opcoes{
+    cursor: pointer;
+}
+
+#imagemplayer{
+
+    position: absolute;
+    height: 150px;
+    width: 270px;
+    border-radius: 100px;
+    right:50%;
+    top: 50%;
+    margin-right: -135px;
+    margin-top: -90px;
+}
+#PlayerStatus{
+    position: absolute;
+    height: 250px;
+    width: 270px;
+    right:10%;
+    top: 40%;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+#imagemcomputador{
+    position: absolute;
+    height: 150px;
+    width: 270px;
+    border-radius: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -135px;
+    margin-top: -90px;
+}
+#Computador{
+    position: absolute;
+    height: 250px;
+    width: 270px;
+    left: 10%;
+    top: 40%;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+#Pontuação{
+    background-color: white;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -50px;
+    border-radius: 100px;
+}
+#PlacarNumPLAYER{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: 15px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+}
+#PlacarNumPC{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -30px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+}
+
+#VS{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -10px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+}
+#TituloPlacar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -32px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+}
+
+#NomeDoJogadorTitulo{
+    cursor: pointer;
+    text-align: center;
+
+}
+#NomeDoJogadorTitulo:hover{
+    color: green;
+}
+#largPlayerName{
+    position: absolute;
+    height: 27px;
+    width: 145px;
+    left: 50%;
+    margin-left: 20px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.301);
+    border: 2px solid rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+}
+#largPlayerName:hover{
+    border: 2px solid rgba(255, 255, 255, 0.699);
+}
+
+#NomeDoJogadorTituloP{
+    position: absolute;
+    height: 27px;
+    width: 175px;
+    left: 50%;
+    margin-left: -110px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+
+}
+#contentPlayerName{
+    position: absolute;
+    width: 300px;
+    height: 27px;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -195px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+
+}
