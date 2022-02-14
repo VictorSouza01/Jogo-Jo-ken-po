@@ -1,4 +1,4 @@
-var placarPC = parseInt; //variaveis para guardar o valor 
+var placarPC = parseInt; 
 var placarPlayer  = parseInt;
 var jogador
 placarPC = 0;
@@ -11,24 +11,19 @@ function nome(){
         return nome()
     }
     else if (jogador.length > 10){
-            alert("número maximo de 10 Caracteres")
-            return nome();
+        alert("número maximo de 10 Caracteres")
+        return nome();
     }
     else{
         alert("Para ganhar atinja 10 pontos!!!")
-
         document.getElementById("NomeDoJogadorTitulo").textContent = jogador; 
         document.getElementById("NomeDoJogadorFoto").textContent = jogador;
     }
-    
     document.getElementById("PlacarNumPC").textContent = placarPC;
     document.getElementById("PlacarNumPLAYER").textContent = placarPlayer;
-
 }
 
 function Seleciona(){
-    
-
     var RadioPedra = document.getElementById('Pedra');
     var RadioPapel = document.getElementById('Papel');
     var RadioTesoura = document.getElementById('Tesoura');
@@ -56,7 +51,6 @@ function Jogar(){
         alert("Selecione, Pedra, Papel ou Tesoura para poder jogar!!")
     }
     else{
-
         var sorteio = Math.floor(Math.random() * 3);
         switch(sorteio){
             case 0:
@@ -78,16 +72,13 @@ function Jogar(){
         if ((document.getElementById("Pedra").checked== true && sorteio == 0)|| (document.getElementById("Papel").checked == true &&  sorteio == 1)|| (document.getElementById("Tesoura").checked == true &&  sorteio == 2)){
             alert("EMPATE");
         } 
-    
         else if ((document.getElementById("Pedra").checked== true && sorteio == 2)|| (document.getElementById("Papel").checked == true &&  sorteio == 0)|| (document.getElementById("Tesoura").checked == true &&  sorteio == 1)){
             alert("Você Venceu!!")
             placarPlayer = placarPlayer + 1;
             document.getElementById("PlacarNumPLAYER").textContent = placarPlayer;
         } 
         else {
-    
             alert("Computador venceu");
-            
             placarPC = placarPC + 1;
             document.getElementById("PlacarNumPC").textContent = placarPC;
         }
@@ -103,7 +94,6 @@ function resetar(){
     document.getElementById("Pedra").checked = false
     document.getElementById("Tesoura").checked = false
     document.getElementById("Papel").checked = false
-
 
     document.getElementById("imagemcomputador").src="IMGS/pc.png";
     document.getElementById("imagemcomputador").style.width="270px";
@@ -134,8 +124,8 @@ function MudarNick(){
         return MudarNick()
     }
     else if (jogador.length > 10){
-            alert("número maximo de 10 Caracteres")
-            return MudarNick();
+        alert("número maximo de 10 Caracteres")
+        return MudarNick();
     }
     else{
         alert("Nickname atualizado!")
